@@ -56,7 +56,7 @@ function placeOrder(cardNumber) {
   if (cardNumber) {
     var emptyMessage = "Your total cost is $"
     var totalCost = 0
-      for (var i = 0, i < cart.length, i++) {
+      for (var i = 0; i < cart.length; i++) {
         totalCost.push(cart[i].itemPrice)
       }
       totalCost += `${totalCost}, which will be charged to the card ${cardNumber}.`
