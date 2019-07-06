@@ -53,7 +53,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  if (cardNumber === 0) {
-    return "Sorry, we don't have a credit card on file for you."
-  }
+  if (cardNumber) {
+
+  } else {return "Sorry, we don't have a credit card on file for you."}
 }
