@@ -39,14 +39,14 @@ function total() {
 
 function removeFromCart(item) {
   var cartCheck = false
-  
+
   for(var i = 0; i < cart.length; i++) {
     if(item === cart[i].itemName) {
       cartCheck = true
       cart.splice(i,1)
     }
-  } 
-  
+  }
+
   if (cartCheck) {
     return cart
   } else {return "That item is not in your cart."}
