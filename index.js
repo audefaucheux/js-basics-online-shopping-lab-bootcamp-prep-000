@@ -61,7 +61,7 @@ function placeOrder(cardNumber) {
       }
       emptyMessage += `${totalCost}, which will be charged to the card ${cardNumber}.`
       cart = []
-      return totalCost
+      return emptyMessage
   } else {
     return "Sorry, we don't have a credit card on file for you."}
 }
