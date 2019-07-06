@@ -59,7 +59,7 @@ function placeOrder(cardNumber) {
       for (var i = 0; i < cart.length; i++) {
         totalCost += cart[i].itemPrice
       }
-      totalCost += `${totalCost}, which will be charged to the card ${cardNumber}.`
+      emptyMessage += `${totalCost}, which will be charged to the card ${cardNumber}.`
       cart = []
       return totalCost
   } else {
